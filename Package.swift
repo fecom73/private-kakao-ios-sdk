@@ -13,9 +13,9 @@ let package = Package(
         .library(
             name: "Alamofire",
             targets: ["Alamofire"]),
-    //    .library(
-    //        name: "KakaoSDKCommon",
-    //        targets: ["KakaoSDKCommon"]),
+       .library(
+           name: "KakaoSDKCommon",
+           targets: ["KakaoSDKCommon"]),
     //    .library(
     //        name: "KakaoSDKAuth",
     //        targets: ["KakaoSDKAuth"]),
@@ -57,10 +57,10 @@ let package = Package(
     //                  url:"https://github.daumkakao.com/kops/private-kakao-ios-sdk/releases/download/2.9.2/Alamofire_xcframework.zip",
     //                  checksum:"5c219755359603b57eb8f1e40839e0eba0945cc62586981ca526b9804038712d"
     //    ),
-    //    .binaryTarget(name: "KakaoSDKCommon",
-    //                  url:"https://github.daumkakao.com/kops/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKCommon_xcframework.zip",
-    //                  checksum: "aacdd8b07521e112db4b1881c2fd0d14c291028cfc591d02a64b99b2849987b1b0"
-    //    ),
+       .binaryTarget(name: "KakaoSDKCommon",
+                     url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKCommon_xcframework.zip",
+                     checksum: "12cdb2a3a47b11ce1e07aedec62543423591f6a3e1482491ee209752ae15c89f"
+       ),
     //    .binaryTarget(name: "KakaoSDKAuth",
     //                  url:"https://github.daumkakao.com/kops/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKAuth_xcframework.zip",
     //                  checksum: "9c773ae8bb055ede9e4c6cfa42af3ef3f3ca690f455879553b4fc59f280eba73"
