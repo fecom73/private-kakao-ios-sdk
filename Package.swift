@@ -72,6 +72,7 @@ let package = Package(
 //    ),
         .target(name: "KakaoSDKCommonTarget",
             dependencies: [
+                .target(name: "Alamofire"),
                 .target(name: "KakaoSDKCommon")
             ]
         ),
@@ -81,6 +82,7 @@ let package = Package(
         ),
         .target(name: "KakaoSDKAuthTarget",
             dependencies: [
+                .target(name: "KakaoSDKCommon"),
                 .target(name: "KakaoSDKAuth")
             ]
         ),
@@ -90,6 +92,7 @@ let package = Package(
         ),
         .target(name: "KakaoSDKUserTarget",
             dependencies: [
+                .target(name: "KakaoSDKAuth"),
                 .target(name: "KakaoSDKUser")
             ]
         ),
@@ -99,6 +102,8 @@ let package = Package(
         ),
         .target(name: "KakaoSDKTalkTarget",
             dependencies: [
+                .target(name: "KakaoSDKUser"),
+                .target(name: "KakaoSDKTemplate"),
                 .target(name: "KakaoSDKTalk")
             ]
         ),
@@ -108,6 +113,7 @@ let package = Package(
         ),
         .target(name: "KakaoSDKStoryTarget",
             dependencies: [
+                .target(name: "KakaoSDKUser"),
                 .target(name: "KakaoSDKStory")
             ]
         ),
@@ -117,6 +123,8 @@ let package = Package(
         ),
         .target(name: "KakaoSDKLinkTarget",
             dependencies: [
+                .target(name: "KakaoSDKCommon"),
+                .target(name: "KakaoSDKTemplate"),
                 .target(name: "KakaoSDKLink")
             ]
         ),
@@ -126,6 +134,7 @@ let package = Package(
         ),
         .target(name: "KakaoSDKTemplateTarget",
             dependencies: [
+                .target(name: "KakaoSDKCommon"),
                 .target(name: "KakaoSDKTemplate")
             ]
         ),
@@ -135,6 +144,7 @@ let package = Package(
         ),
         .target(name: "KakaoSDKNaviTarget",
             dependencies: [
+                .target(name: "KakaoSDKCommon"),
                 .target(name: "KakaoSDKNavi")
             ]
         ),
