@@ -13,39 +13,39 @@ let package = Package(
         .library(
             name: "Alamofire",
             type: .dynamic,
-            targets: ["Alamofire"]),
+            targets: ["AlamofireTarget"]),
        .library(
            name: "KakaoSDKCommon",
            type: .dynamic,
-           targets: ["KakaoSDKCommon"]),
+           targets: ["KakaoSDKCommonTarget"]),
        .library(
            name: "KakaoSDKAuth",
            type: .dynamic,
-           targets: ["KakaoSDKAuth"]),
+           targets: ["KakaoSDKAuthTarget"]),
        .library(
            name: "KakaoSDKUser",
            type: .dynamic,
-           targets: ["KakaoSDKUser"]),
+           targets: ["KakaoSDKUserTarget"]),
        .library(
            name: "KakaoSDKTalk",
            type: .dynamic,
-           targets: ["KakaoSDKTalk"]),
+           targets: ["KakaoSDKTalkTarget"]),
        .library(
            name: "KakaoSDKStory",
            type: .dynamic,
-           targets: ["KakaoSDKStory"]),
+           targets: ["KakaoSDKStoryTarget"]),
        .library(
            name: "KakaoSDKLink",
            type: .dynamic,
-           targets: ["KakaoSDKLink"]),
+           targets: ["KakaoSDKLinkTarget"]),
        .library(
            name: "KakaoSDKNavi",
            type: .dynamic,
-           targets: ["KakaoSDKNavi"]),
+           targets: ["KakaoSDKNaviTarget"]),
        .library(
            name: "KakaoSDKTemplate",
            type: .dynamic,
-           targets: ["KakaoSDKTemplate"])        
+           targets: ["KakaoSDKTemplateTarget"])
     ],
 //    dependencies: [
 //        .package(name: "Alamofire",
@@ -53,50 +53,95 @@ let package = Package(
 //                  Version(5,1,0)..<Version(6,0,0))
 //    ],
     targets: [
-       .binaryTarget(name: "Alamofire",       
-                     url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/Alamofire_xcframework.zip",
-                     checksum:"5c219755359603b57eb8f1e40839e0eba0945cc62586981ca526b9804038712d"
-       ),
-        // .binaryTarget(name: "Alamofire",
-        //               url:"https://devrepo.kakao.com/nexus/repository/kakaodev-releases/com/kakao/sdk/spm-kakao-ios-sdk-alamofire/2.9.2/spm-kakao-ios-sdk-alamofire-2.9.2.zip",
-        //               checksum:"030c4a09585c311912c97925619c730c37fed9e71078689c861563fa09449040"
-        // ),
-    //    .binaryTarget(name: "Alamofire",
-    //                  url:"https://github.daumkakao.com/kops/private-kakao-ios-sdk/releases/download/2.9.2/Alamofire_xcframework.zip",
-    //                  checksum:"5c219755359603b57eb8f1e40839e0eba0945cc62586981ca526b9804038712d"
-    //    ),
-       .binaryTarget(name: "KakaoSDKCommon",
+        .target(name: "AlamofireTarget",
+                dependencies: [
+                    .target(name: "AlamofireFramework")
+                ]
+        ),
+        .binaryTarget(name: "AlamofireFramework",
+                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/Alamofire_xcframework.zip",
+                      checksum:"5c219755359603b57eb8f1e40839e0eba0945cc62586981ca526b9804038712d"
+        ),
+// .binaryTarget(name: "Alamofire",
+//               url:"https://devrepo.kakao.com/nexus/repository/kakaodev-releases/com/kakao/sdk/spm-kakao-ios-sdk-alamofire/2.9.2/spm-kakao-ios-sdk-alamofire-2.9.2.zip",
+//               checksum:"030c4a09585c311912c97925619c730c37fed9e71078689c861563fa09449040"
+// ),
+//    .binaryTarget(name: "Alamofire",
+//                  url:"https://github.daumkakao.com/kops/private-kakao-ios-sdk/releases/download/2.9.2/Alamofire_xcframework.zip",
+//                  checksum:"5c219755359603b57eb8f1e40839e0eba0945cc62586981ca526b9804038712d"
+//    ),
+        .target(name: "KakaoSDKCommonTarget",
+            dependencies: [
+                .target(name: "KakaoSDKCommonFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKCommonFramework",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKCommon_xcframework.zip",
                      checksum: "12cdb2a3a47b11ce1e07aedec62543423591f6a3e1482491ee209752ae15c89f"
-       ),
-       .binaryTarget(name: "KakaoSDKAuth",
+        ),
+        .target(name: "KakaoSDKAuthTarget",
+            dependencies: [
+                .target(name: "KakaoSDKAuthFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKAuthFramework",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKAuth_xcframework.zip",
                      checksum: "7a21605b26d2f5481bed50f766983811f7b49f6dbed370ec1f622519437f3024"
-       ),
-       .binaryTarget(name: "KakaoSDKUser",
-                     url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKUser_xcframework.zip",
-                     checksum: "b7eeec3979e8276e13922b1cae984ebddb4de6df07971ca51ac7024609fd3f33"
-       ),
-       .binaryTarget(name: "KakaoSDKTalk",
+        ),
+        .target(name: "KakaoSDKUserTarget",
+            dependencies: [
+                .target(name: "KakaoSDKUserFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKUserFramework",
+                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKUser_xcframework.zip",
+                      checksum: "b7eeec3979e8276e13922b1cae984ebddb4de6df07971ca51ac7024609fd3f33"
+        ),
+        .target(name: "KakaoSDKTalkTarget",
+            dependencies: [
+                .target(name: "KakaoSDKTalkFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKTalkFramework",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKTalk_xcframework.zip",
                      checksum: "6f8bdf2112776e5108e49411f6dac79832eccdc1cc632271f0016b675b77a65f"
-       ),
-       .binaryTarget(name: "KakaoSDKStory",
+        ),
+        .target(name: "KakaoSDKStoryTarget",
+            dependencies: [
+                .target(name: "KakaoSDKStoryFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKStoryFramework",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKStory_xcframework.zip",
                      checksum: "0826299ded56d6de2adddf07d16e4e56476906da30e06a3a064d4fade6369a39"
-       ),
-       .binaryTarget(name: "KakaoSDKLink",
+        ),
+        .target(name: "KakaoSDKLinkTarget",
+            dependencies: [
+                .target(name: "KakaoSDKLinkFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKLinkFramework",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKLink_xcframework.zip",
                      checksum: "20faec0371d5548218dcdba7a8d7256c6f66c52476e68feb7ddcd75499add212"
-       ),
-       .binaryTarget(name: "KakaoSDKTemplate",
+        ),
+        .target(name: "KakaoSDKTemplateTarget",
+            dependencies: [
+                .target(name: "KakaoSDKTemplateFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKTemplateFramework",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKTemplate_xcframework.zip",
                      checksum: "d3d73e4dad6a89d6f4697b51cc033406f5e9ffbee7e9850c7e0527e940f01166"
-       ),
-       .binaryTarget(name: "KakaoSDKNavi",
+        ),
+        .target(name: "KakaoSDKNaviTarget",
+            dependencies: [
+                .target(name: "KakaoSDKNaviFramework")
+            ]
+        ),
+        .binaryTarget(name: "KakaoSDKNaviFramework",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKNavi_xcframework.zip",
                      checksum: "74ab5e087226fec73dae21932552d629e2bde1c9dc8844baea8ded392cbb7438"
-       )
+        )
     ],
     swiftLanguageVersions: [
         .v5
