@@ -81,11 +81,11 @@ let package = Package(
                      checksum: "20faec0371d5548218dcdba7a8d7256c6f66c52476e68feb7ddcd75499add212"
        ),
        .binaryTarget(name: "KakaoSDKTemplate",
-                     url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKTemplate.xcframework.zip",
+                     url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKTemplate_xcframework.zip",
                      checksum: "d3d73e4dad6a89d6f4697b51cc033406f5e9ffbee7e9850c7e0527e940f01166"
        ),
        .binaryTarget(name: "KakaoSDKNavi",
-                     url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKNavi.xcframework.zip",
+                     url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKNavi_xcframework.zip",
                      checksum: "74ab5e087226fec73dae21932552d629e2bde1c9dc8844baea8ded392cbb7438"
        )
     ],
