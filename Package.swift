@@ -12,30 +12,39 @@ let package = Package(
     products: [
         .library(
             name: "Alamofire",
+            type: .dynamic,
             targets: ["Alamofire"]),
        .library(
            name: "KakaoSDKCommon",
+           type: .dynamic,
            targets: ["KakaoSDKCommon"]),
        .library(
            name: "KakaoSDKAuth",
+           type: .dynamic,
            targets: ["KakaoSDKAuth"]),
        .library(
            name: "KakaoSDKUser",
+           type: .dynamic,
            targets: ["KakaoSDKUser"]),
        .library(
            name: "KakaoSDKTalk",
+           type: .dynamic,
            targets: ["KakaoSDKTalk"]),
        .library(
            name: "KakaoSDKStory",
+           type: .dynamic,
            targets: ["KakaoSDKStory"]),
        .library(
            name: "KakaoSDKLink",
+           type: .dynamic,
            targets: ["KakaoSDKLink"]),
        .library(
            name: "KakaoSDKNavi",
+           type: .dynamic,
            targets: ["KakaoSDKNavi"]),
        .library(
            name: "KakaoSDKTemplate",
+           type: .dynamic,
            targets: ["KakaoSDKTemplate"])        
     ],
 //    dependencies: [
