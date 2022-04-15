@@ -88,7 +88,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKAuth",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKAuth_xcframework.zip",
-                     checksum: "6b675cf49bc0653818a2e91124e4591c80047a5f972b13dfb9377cd3dfd13d46"
+                     checksum: "fe45182160c8edb513c34c56c6f5bd446504dbacad254bbc7041abecce23830e"
         ),
         .target(name: "KakaoSDKUserTarget",
             dependencies: [
@@ -98,7 +98,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKUser",
                       url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKUser_xcframework.zip",
-                      checksum: "b7eeec3979e8276e13922b1cae984ebddb4de6df07971ca51ac7024609fd3f33"
+                      checksum: "6b675cf49bc0653818a2e91124e4591c80047a5f972b13dfb9377cd3dfd13d46"
         ),
         .target(name: "KakaoSDKTalkTarget",
             dependencies: [
