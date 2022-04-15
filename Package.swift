@@ -60,7 +60,7 @@ let package = Package(
         ),
         .binaryTarget(name: "Alamofire",
                       url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/Alamofire_xcframework.zip",
-                      checksum:"5c219755359603b57eb8f1e40839e0eba0945cc62586981ca526b9804038712d"
+                      checksum:"99ea33e77ef517c26489b07f46d81f0615925ed32f255d2d331d13e0e28a5ef0"
         ),
 // .binaryTarget(name: "Alamofire",
 //               url:"https://devrepo.kakao.com/nexus/repository/kakaodev-releases/com/kakao/sdk/spm-kakao-ios-sdk-alamofire/2.9.2/spm-kakao-ios-sdk-alamofire-2.9.2.zip",
@@ -78,7 +78,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKCommon",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKCommon_xcframework.zip",
-                     checksum: "12cdb2a3a47b11ce1e07aedec62543423591f6a3e1482491ee209752ae15c89f"
+                     checksum: "f74f4619da84c85b928a197bba1f3512456f9855bd6d42cb3ac830536aa5fb11"
         ),
         .target(name: "KakaoSDKAuthTarget",
             dependencies: [
@@ -88,7 +88,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKAuth",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKAuth_xcframework.zip",
-                     checksum: "7a21605b26d2f5481bed50f766983811f7b49f6dbed370ec1f622519437f3024"
+                     checksum: "6b675cf49bc0653818a2e91124e4591c80047a5f972b13dfb9377cd3dfd13d46"
         ),
         .target(name: "KakaoSDKUserTarget",
             dependencies: [
@@ -109,7 +109,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKTalk",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKTalk_xcframework.zip",
-                     checksum: "6f8bdf2112776e5108e49411f6dac79832eccdc1cc632271f0016b675b77a65f"
+                     checksum: "6af084965b56239d8e74fc71f6d2a242d0132be66d62094e5161be1f80ecce15"
         ),
         .target(name: "KakaoSDKStoryTarget",
             dependencies: [
@@ -119,7 +119,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKStory",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKStory_xcframework.zip",
-                     checksum: "0826299ded56d6de2adddf07d16e4e56476906da30e06a3a064d4fade6369a39"
+                     checksum: "d11d1f9f4a4abed1b05d6617fe83a2c3cf86e99ab4526c5c1b055ff89c8c1bee"
         ),
         .target(name: "KakaoSDKLinkTarget",
             dependencies: [
@@ -130,7 +130,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKLink",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKLink_xcframework.zip",
-                     checksum: "20faec0371d5548218dcdba7a8d7256c6f66c52476e68feb7ddcd75499add212"
+                     checksum: "e7cbdc7c0955d7aab54eb7255ae7089cdaf81c6cf5f715e76bc6ba706e06a1bc"
         ),
         .target(name: "KakaoSDKTemplateTarget",
             dependencies: [
@@ -140,7 +140,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKTemplate",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKTemplate_xcframework.zip",
-                     checksum: "d3d73e4dad6a89d6f4697b51cc033406f5e9ffbee7e9850c7e0527e940f01166"
+                     checksum: "2f7c157624fd3f146355dfb86e059a6ecb87b6215572f0116214d84a4ab0c98f"
         ),
         .target(name: "KakaoSDKNaviTarget",
             dependencies: [
@@ -150,7 +150,7 @@ let package = Package(
         ),
         .binaryTarget(name: "KakaoSDKNavi",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/2.9.2/KakaoSDKNavi_xcframework.zip",
-                     checksum: "74ab5e087226fec73dae21932552d629e2bde1c9dc8844baea8ded392cbb7438"
+                     checksum: "399bb35368ca60ab7d4799923b24fa7bb173e3e5f7f146ceb19c1e022b8926b0"
         )
     ],
     swiftLanguageVersions: [
