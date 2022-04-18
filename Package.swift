@@ -15,13 +15,13 @@ let package = Package(
             targets: ["Alamofire"]),
        .library(
            name: "KakaoSDKCommon",
-           targets: ["KakaoSDK"]),
+           targets: ["KakaoSDKCommon"]),
        .library(
            name: "KakaoSDKAuth",
            targets: ["KakaoSDKAuth"]),
        .library(
            name: "KakaoSDKUser",
-           targets: ["KakaoSDKUserTarget"]),
+           targets: ["KakaoSDKUser"]),
        .library(
            name: "KakaoSDKTalk",
            targets: ["KakaoSDKTalk"]),
