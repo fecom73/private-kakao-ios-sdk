@@ -59,7 +59,7 @@ let package = Package(
     targets: [
         .binaryTarget(name: "Alamofire",
                       url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/Alamofire_xcframework.zip",
-                      checksum:checksums["Alamofire"]
+                      checksum:checksums["Alamofire"]!
         ),
 // .binaryTarget(name: "Alamofire",
 //               url:"https://devrepo.kakao.com/nexus/repository/kakaodev-releases/com/kakao/sdk/spm-kakao-ios-sdk-alamofire/\(version)/spm-kakao-ios-sdk-alamofire-2.9.2.zip",
@@ -71,35 +71,35 @@ let package = Package(
 //    ),
         .binaryTarget(name: "KakaoSDKCommon",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKCommon_xcframework.zip",
-                     checksum: checksums["KakaoSDKCommon"]
+                     checksum: checksums["KakaoSDKCommon"]!
         ),
         .binaryTarget(name: "KakaoSDKAuth",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKAuth_xcframework.zip",
-                     checksum: checksums["KakaoSDKAuth"]
+                     checksum: checksums["KakaoSDKAuth"]!
         ),
         .binaryTarget(name: "KakaoSDKUser",
                       url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKUser_xcframework.zip",
-                      checksum: checksums["KakaoSDKUser"]
+                      checksum: checksums["KakaoSDKUser"]!
         ),
         .binaryTarget(name: "KakaoSDKTalk",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKTalk_xcframework.zip",
-                     checksum: checksums["KakaoSDKTalk"]
+                     checksum: checksums["KakaoSDKTalk"]!
         ),
         .binaryTarget(name: "KakaoSDKStory",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKStory_xcframework.zip",
-                     checksum: checksums["KakaoSDKStory"]
+                     checksum: checksums["KakaoSDKStory"]!
         ),
         .binaryTarget(name: "KakaoSDKLink",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKLink_xcframework.zip",
-                     checksum: checksums["KakaoSDKLink"]
+                     checksum: checksums["KakaoSDKLink"]!
         ),
         .binaryTarget(name: "KakaoSDKTemplate",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKTemplate_xcframework.zip",
-                     checksum: checksums["KakaoSDKTemplate"]
+                     checksum: checksums["KakaoSDKTemplate"]!
         ),
         .binaryTarget(name: "KakaoSDKNavi",
                      url:"https://github.com/fecom73/private-kakao-ios-sdk/releases/download/\(version)/KakaoSDKNavi_xcframework.zip",
-                     checksum: checksums["KakaoSDKNavi"]
+                     checksum: checksums["KakaoSDKNavi"]!
         )
     ],
     swiftLanguageVersions: [
